@@ -1,0 +1,37 @@
+/* import fonts */
+@import url(./fonts.css);
+/* css vars */
+@import url(./partials/_variables.css);
+
+
+/* start nav */
+
+.header_area .main-menu .navbar .navbar-brand{
+padding: 0 5rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 15rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+font: normal 500;
+text-transform: uppercase;
+padding: 1.5rem;
+}
+
+.header_area .main-menu .navbar-nav .active{
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header_area .main-menu .navbar-nav .nav-link:hover{
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* end nav */
