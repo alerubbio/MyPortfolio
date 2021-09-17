@@ -1,6 +1,7 @@
 /* font-face */
 
-/* @font-face{
-    font-family: ;
-    src: file;
-} */
+@font-face{
+    font-family:"Raleway" ;
+    src:url('../fonts/static/Raleway-Regular.ttf');
+    font-style: normal;
+}

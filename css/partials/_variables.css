@@ -5,18 +5,18 @@ html, body{
     height: 100%;
 }
 
-/* CSS Vars */
-
+/* Custom Color Palette */
 :root{
-    --primary-color: blue;
-    --secondary-color: purple;
-    --title-color: black;
-    --border-color: gray;
-    --text-color: white;
     --gradient-color:linear-gradient(90deg,
-     rgba(160,63,208,1) 19%,
-     rgba(0,212,255,1) 100%);
-
-    /* font family */
-    /* --varname: 'fontname', cursive; */
+     rgba(182,30,96,1) 0%,
+      rgba(255,45,136,1) 100%);
+    --maroon-x-11: #B61E60ff;
+    --silver-chalice: #AFB1B4ff;
+    --raisin-black: #252934ff;  
+    --prussian-blue: #052A4Fff;
+    --powder-blue: #C6EEF5ff;
+    --mandarin: #F07C42ff;
+    --maximum-blue-green: #56BDCAff;
+    --tuscan-red: #7E4746ff;
+    --platinum: #E7E7E7ff;
 }

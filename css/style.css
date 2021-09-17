@@ -1,25 +1,43 @@
 /* import fonts */
 @import url(./fonts.css);
+
 /* css vars */
 @import url(./partials/_variables.css);
 
+html, body{
+    font-family: "Raleway";
+    background: aliceblue;
+}
 
 /* start nav */
+nav
+{
+    border-bottom: 3px solid var(--maximum-blue-green);
+    height: 4rem;
+    background-color: var(--raisin-black);
+}
 
 .header_area .main-menu .navbar .navbar-brand{
-padding: 0 5rem 0 5rem;
+    padding: .4rem 3rem 0 0;
+    text-transform: uppercase;
 }
 
 .header_area .main-menu .navbar{
-    padding: 1rem 15rem;
+    padding: 1rem 8rem 1rem 13rem;
+    float: right;
 }
+
 
 .header_area .main-menu .nav-item .nav-link{
-font: normal 500;
-text-transform: uppercase;
-padding: 1.5rem;
+    /* text-transform: uppercase; */
+    padding: 1.5rem;
+    font-size: 1.1rem;
 }
 
+#navbar-name{
+    color: aliceblue;
+    color: var(--maroon-x-11);
+}
 .header_area .main-menu .navbar-nav .active{
     background: var(--gradient-color);
     background-clip: text;
@@ -27,6 +45,9 @@ padding: 1.5rem;
     -webkit-text-fill-color: transparent;
 }
 
+.header_area .main-menu .navbar-nav .nav-link{
+    color: aliceblue;
+}
 .header_area .main-menu .navbar-nav .nav-link:hover{
     background: var(--gradient-color);
     background-clip: text;
@@ -35,3 +56,26 @@ padding: 1.5rem;
 }
 
 /* end nav */
+
+/* start main */
+.site-main{
+    padding-top: 15%;
+}
+/* end main */
+
+/* Start Banner Area */
+.site-main .site-banner{
+    background: url();
+}
+
+.highlight{
+    color: var(--maroon-x-11);
+}
+.site-main .site-banner .site-title h1{
+    font-size: 2.5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 2rem;
+}
+/* End Banner Area */
