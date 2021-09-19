@@ -6,7 +6,12 @@
 
 html, body{
     font-family: "Raleway";
-    background: aliceblue;
+    background: var(--raisin-black);
+    color: aliceblue;
+}
+
+.highlight{
+    color: var(--maroon-x-11);
 }
 
 /* start nav */
@@ -31,7 +36,7 @@ nav
 .header_area .main-menu .nav-item .nav-link{
     /* text-transform: uppercase; */
     padding: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 #navbar-name{
@@ -59,28 +64,31 @@ nav
 
 /* start main */
 .site-main{
-    padding-top: 15%;
+    padding-top: 17%;
 }
 /* end main */
 
 /* Start Banner Area */
-.site-main .site-banner{
-    background: url();
+.site-main .page-section #site-banner{
+    
 }
 
-.highlight{
+.btn#resume-btn{
+    background: var(--raisin-black);
     color: var(--maroon-x-11);
-}
-.site-main .site-banner .site-title{
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-.site-main .site-banner .site-title h1{
-    font-size: 2.5rem;
-
+    border-radius: 0;
+    border-color: aliceblue;
 }
 
-.site-main .site-banner .site-title h4{
-    font-size: 2rem;
+/* .button#resume-btn */
+.site-main .page-section#about-me{
+    padding-top: 8rem;
+    margin: 20%;
+    margin-top: 10%;
 }
+
+.site-main #site-banner h1{
+    font-size: 3rem;
+}
+
 /* End Banner Area */
