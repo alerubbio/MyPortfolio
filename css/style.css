@@ -13,6 +13,9 @@ html, body{
 .highlight{
     color: var(--maroon-x-11);
 }
+.highlight2{
+    color: var(--maximum-blue-green);
+}
 
 /* start nav */
 nav
@@ -24,7 +27,7 @@ nav
 
 .header_area .main-menu .navbar .navbar-brand{
     padding: .4rem 3rem 0 0;
-    text-transform: uppercase;
+    
 }
 
 .header_area .main-menu .navbar{
@@ -62,25 +65,29 @@ nav
 
 /* end nav */
 
-/* start main */
 .site-main{
-    padding-top: 17%;
+    padding-top: 11%;
 }
-/* end main */
 
 /* Start Banner Area */
-.site-main .page-section #site-banner{
-    
+#avatar-img{
+    width: 20%; /* you can use % */
+    height: auto;
 }
 
-.btn#resume-btn{
+#resume-btn{
     background: var(--raisin-black);
-    color: var(--maroon-x-11);
-    border-radius: 0;
+    color: var(--maximum-blue-green);
     border-color: aliceblue;
+    font-size: x-large;
+    transition-duration: 0.4s;
 }
 
-/* .button#resume-btn */
+#resume-btn:hover{
+    /* background: var(--maroon-x-11); */
+    color: var(--maroon-x-11);
+}
+
 .site-main .page-section#about-me{
     padding-top: 8rem;
     margin: 20%;
@@ -92,3 +99,10 @@ nav
 }
 
 /* End Banner Area */
+
+/* Start About Me */
+#about-me .text-wrap{
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+}
+/* End About Me */

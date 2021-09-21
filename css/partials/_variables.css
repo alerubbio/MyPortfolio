@@ -9,7 +9,7 @@ html, body{
 :root{
     --gradient-color:linear-gradient(90deg,
      rgba(182,30,96,1) 0%,
-      rgba(255,45,136,1) 100%);
+      rgb(255, 45, 136) 100%);
     --maroon-x-11: #B61E60ff;
     --silver-chalice: #AFB1B4ff;
     --raisin-black: #252934ff;  
