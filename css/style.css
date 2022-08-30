@@ -6,8 +6,10 @@
 
 html, body{
     font-family: "Raleway";
-    background: var(--raisin-black);
-    color: aliceblue;
+    color: black;
+}
+body{
+    padding-bottom: 50px;
 }
 
 .highlight{
@@ -25,38 +27,38 @@ nav
     background-color: var(--raisin-black);
 }
 
-.header_area .main-menu .navbar .navbar-brand{
+ .navbar .navbar-brand{
     padding: .4rem 3rem 0 0;
-    
 }
 
-.header_area .main-menu .navbar{
+ .navbar{
     padding: 1rem 8rem 1rem 13rem;
     float: right;
 }
 
 
-.header_area .main-menu .nav-item .nav-link{
+ .nav-item .nav-link{
     /* text-transform: uppercase; */
     padding: 1.5rem;
     font-size: 1.3rem;
 }
 
-#navbar-name{
+#navbar-name .active{
     color: aliceblue;
     color: var(--maroon-x-11);
 }
-.header_area .main-menu .navbar-nav .active{
+
+ .navbar-nav .active{
     background: var(--gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.header_area .main-menu .navbar-nav .nav-link{
+ .navbar-nav .nav-link{
     color: aliceblue;
 }
-.header_area .main-menu .navbar-nav .nav-link:hover{
+ .navbar-nav .nav-link:hover{
     background: var(--gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
@@ -65,22 +67,41 @@ nav
 
 /* end nav */
 
-.site-main{
-    padding-top: 11%;
+#particles-js {
+    background-color: var(--raisin-black);
+    position : fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* display:block; */
 }
 
 /* Start Banner Area */
 #avatar-img{
     width: 20%; /* you can use % */
     height: auto;
+    padding-bottom: 1rem;
+    margin-right: 4%;
+    z-index: 1;
+}
+
+.inline-icons a .fa-linkedin{
+    text-decoration: none;
+    color: inherit;
+    padding-right: .5%;
+}
+.inline-icons a .fa-github{
+    text-decoration: none;
+    color: inherit;
 }
 
 #resume-btn{
-    background: var(--raisin-black);
+    background-color: var(--raisin-black);
     color: var(--maximum-blue-green);
     border-color: aliceblue;
     font-size: x-large;
     transition-duration: 0.4s;
+    margin-right: 2%;
 }
 
 #resume-btn:hover{
@@ -88,11 +109,23 @@ nav
     color: var(--maroon-x-11);
 }
 
-.site-main .page-section#about-me{
-    padding-top: 8rem;
-    margin: 20%;
-    margin-top: 10%;
+a:link {
+    color: var(--maximum-blue-green);
+    text-decoration: none;
 }
+a:hover {
+    text-decoration: none;
+    color: var(--maroon-x-11)
+}
+
+#site-banner {
+    padding-top: 12%;
+    color:aliceblue;
+    padding-bottom: 12%;
+    /* border-bottom: 3px solid var(--maximum-blue-green); */
+    /* z-index: 2; */
+}
+
 
 .site-main #site-banner h1{
     font-size: 3rem;
@@ -100,9 +133,92 @@ nav
 
 /* End Banner Area */
 
+/* Start Projects */
+.page-section#projects{
+    padding-top: 5%;
+}
+.wrapper{
+    max-width: 850px;
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card_wrapper{
+    width: 350px;
+    transition: transform .5s;
+    position: relative;
+    height: 430px;
+    border: 1px solid #DEDCDC;
+    border-radius: 6px;
+    background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://cdn.dribbble.com/users/77760/screenshots/2042501/potato.jpg');
+    background-size: auto;
+    background-repeat: none;
+    
+}
+.project_summary{
+
+    margin-top: 260px;
+    position: relative;
+    padding: 0 20px;
+    background: #fff;
+    flex: 1;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+  
+.project_title{
+
+    margin-bottom: 0;
+    padding-top: 15px;
+    color: #5D6771;
+}
+
+.created_date{
+
+    margin: 10px 0;
+    color: #8A8EA0;
+}
+
+.project_desc{
+
+    margin: 0;
+    font-weight: 300;
+    width: 100%;
+}
+
+.wrapper a{
+    text-decoration: none;
+    color: inherit;
+    height: 425px;
+    margin-bottom: 50px;
+}
+
 /* Start About Me */
 #about-me .text-wrap{
     margin-inline-start: 10%;
     margin-inline-end: 10%;
 }
+.site-main .page-section#about-me{
+    /* background-color: white; */
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
 /* End About Me */
+
+/* Start Contact Form */
+#contact-form{
+    background-color: var(--raisin-black);
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5%;
+    z-index: 2;
+}
+/* End Contact Form */

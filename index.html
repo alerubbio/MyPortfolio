@@ -1,103 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 
   <!-- font-awesome-icons -->
-  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="/css/all.min.css" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- Custom Font-Awesome Kit -->
+  <script src="https://kit.fontawesome.com/b1356ef150.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("0AyATKt8d9D0qzapt");
+    })();
+  </script>
 
   <title>Alejandro Rubio</title>
 </head>
 
 <body>
   <!-- Start Header / Menu -->
-
-  <header class="header_area">
-    <div class="main-menu">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <h2 id="navbar-name" class="highlight">Alejandro Rubio</h2>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="me-auto"></div>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <h2 id="navbar-name" class="highlight">Alejandro Rubio</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="me-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/aboutme.html">About Me</a>
+          </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#contact-me">Contact Me</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
-
-  <!-- End Header / Menu   -->
 
   <!-- Start Main Content Body -->
-  <main class="site-main">
-    
+  <div class="site-main">
     <!-- Start Banner -->
+    <div id="particles-js"></div>
     <section class="page-section text-center" id="site-banner">
-      <div class="container text-center ">
-          <h1 class="title-text highlight">Hi! My Name is Alejandro Rubio.</h1>
-          <h1 class="title-text ">I'm a Software Engineering Student.</h1>
-          <img src="./imgs/avatar-removebg.png" alt="icon-img" class="img-fluid" id="avatar-img">
-      </div>
-      <button type="button" id="resume-btn"> Resume </button>
-    </section>
-    <!-- End Banner -->
-
-    <!-- Start About Me -->
-    <section class="page-section" id="about-me">
+      <!-- particles.js container -->
       <div class="container text-center">
-        <h1 class="title-text highlight2"> About Me </h1>
-          <div class="text-wrap">
-            <h2>Hi! My name is Alejandro and I am a Senior at the University of Central Florida.
-                I expect to graduate in May of 2022. I've recently become really interested in
-                Web Development and I'm learning more everyday!
-            </h2>
-        </div>
+        <h1 class="title-text highlight">Hi! My name is Alejandro Rubio.</h1>
+        <h1 class="title-text">I'm a Junior Software Developer!</h1>
+        <img src="./imgs/bruhhbluebg.PNG" alt="icon-img" class="img-fluid" id="avatar-img" />
       </div>
-
+      <button type="button" id="resume-btn">
+        <a href="Alejandro_Rubio_Resume.pdf" download="Alejandro_Rubio_Resume.pdf">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+          </svg>
+          Resume
+        </a>
+      </button>
+      <span class="inline-icons">
+        <a href="https://www.linkedin.com/in/alerrubio/">
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </a>
+        <a href="https://github.com/alerubbio">
+          <i class="fa-brands fa-github fa-2xl"></i>
+        </a>
+      </span>
     </section>
-    <!-- End About Me -->
 
-  </main>
+    <!-- Start Contact Form -->
+    <section class="page-section" id="contact-me">
+      <div class="container">
+        <form class="text-center border rounded p-5" id="contact-form">
+          <p class="h4 mb-4 highlight2">Contact Me</p>
+
+          <!-- Name -->
+          <input type="text" id="fullName" class="form-control mb-4" placeholder="Name" />
+
+          <!-- Email -->
+          <input type="email" id="emailAddress" class="form-control mb-4" placeholder="E-mail" />
+
+          <!-- Subject -->
+          <input type="subject" id="subject" class="form-control mb-4" placeholder="Subject" />
+
+          <!-- Message -->
+          <div class="form-group">
+            <textarea class="form-control rounded-0 mb-4" id="message" rows="3" placeholder="Message..."></textarea>
+          </div>
+
+          <!-- Send button -->
+          <button class="btn btn-info btn-block" type="submit" onclick="sendEmail()">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+    <br />
+  </div>
+
   <!-- End Main Content Body -->
 
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
+  <script src="js\email_check.js"></script>
+
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+  <script src="js\particles.js"> </script>
+  <script src="js\app.js"> </script>
+
+  <script>
+    function sendEmail() {
+      const serviceID = "service_2hqccoe";
+      const templateID = "template_crs8bjp";
+
+      var params = {
+        from_name: document.getElementById("fullName").value,
+        subject: document.getElementById("subject").value,
+        email_id: document.getElementById("emailAddress").value,
+        message: document.getElementById("message").value
+      }
+
+      // send the email here
+      if (validateFields()) {
+        emailjs.send(serviceID, templateID, params)
+          .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+
+        var frm = document.getElementById('contact-form');
+        frm.submit(); // Submit the form
+        frm.reset();  // Reset all form data
+        return false; // Prevent page refresh
+      }
+    }
+  </script>
 
 </body>
 
