@@ -18,10 +18,13 @@
   <link rel="stylesheet" href="/css/all.min.css" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/p-style.css" />
 
   <!-- EmailJS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- NavBar Js -->
+  <script type="text/javascript" src="/js/active_nav.js" ></script>
 
   <!-- Custom Font-Awesome Kit -->
   <script src="https://kit.fontawesome.com/b1356ef150.js" crossorigin="anonymous"></script>
@@ -37,10 +40,10 @@
 
 <body>
   <!-- Start Header / Menu -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
-        <h2 id="navbar-name" class="highlight">Alejandro Rubio</h2>
+        <h2 id="navbar-name">Alejandro Rubio</h2>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +53,7 @@
         <div class="me-auto"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/html/projects.html">Projects</a>
@@ -74,10 +77,11 @@
   <div class="site-main">
     <!-- Start Banner -->
     <div id="particles-js"></div>
+
     <section class="page-section text-center" id="site-banner">
       <!-- particles.js container -->
       <div class="container text-center">
-        <h1 class="title-text highlight">Hi! My name is Alejandro Rubio.</h1>
+        <h1 class="title-text highlight">Hi! My name is <span class="highlight2">Alejandro Rubio.</span></h1>
         <h1 class="title-text">I'm a Junior Software Developer!</h1>
         <img src="./imgs/bruhhbluebg.PNG" alt="icon-img" class="img-fluid" id="avatar-img" />
       </div>

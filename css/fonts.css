@@ -2,6 +2,19 @@
 
 @font-face{
     font-family:"Raleway" ;
-    src:url('../fonts/static/Raleway-Medium.ttf');
+    src:url('/fonts/static/Raleway-Medium.ttf');
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Lane" ;
+    src:url('/fonts/LANENAR_.ttf');
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family:"Raleway-Reg" ;
+    src:url('/fonts/static/Raleway-Regular.ttf');
     font-style: normal;
 }
