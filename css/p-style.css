@@ -42,20 +42,21 @@ nav {
 
 .nav-item .nav-link {
     /* text-transform: uppercase; */
-    padding: 1.5rem;
-    font-size: 1.4rem;
+    padding: 1.5em;
+    font-size: 1.4em;
+}
+
+.nav-link:hover{
+    transform: translateY(-1px);
+    
+
 }
 
 #navbar-name {
     color: aliceblue;
 }
 
-#navbar-name .active {
-    color: aliceblue;
-    color: var(--maroon-x-11);
-}
-
-.navbar-nav .active {
+.active {
     background: var(--gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
@@ -83,7 +84,7 @@ nav {
     z-index: -1;
 }
 
-/* Start Banner Area */
+/* Start Home Page */
 #avatar-img {
     width: 20%;
     /* you can use % */
@@ -114,6 +115,14 @@ nav {
     margin-left: -2%;
 }
 
+i{
+    transition: 0.2s;
+}
+
+i:hover{
+    transform: translateY(-3px);
+}
+
 #resume-btn:hover {
     /* background: var(--maroon-x-11); */
     color: var(--maroon-x-11);
@@ -140,14 +149,22 @@ a:hover {
     font-size: 3rem;
 }
 
-/* End Banner Area */
+/* End Banner Page */
+
+/* Start Project Page */
 
 .project-container {
     margin: 30px;
+    text-align: center;
+}
+
+#project-page-header{
     padding-top: 5%;
+    font-size: 3rem;
 }
 
 .project-row {
+    padding-top: 1%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -160,6 +177,7 @@ a:hover {
     flex: 1;
     max-width: 500px;
     max-height: 313px;
+    min-width: 420px;
     margin: 20px;
     overflow: hidden;
     transition: 0.2s;
@@ -195,7 +213,7 @@ a:hover {
 
 .project-image .project-details h2 {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-weight: 300;
     margin-top: 50px;
@@ -213,10 +231,9 @@ a:hover {
     transform: translateY(-30px);
 }
 
-
 .project-image .project-details p {
     margin: 20px 20px 0 20px;
-    font-size: 18px;
+    font-size: 1.25rem;
     text-align: center;
     opacity: 0;
     transition: 0.6s;
@@ -262,64 +279,20 @@ a:hover {
 .icon-wrapper {}
 
 img.devicon {
-    width: 1.6vw;
-    height: 1.6vw;
+    width: 34px;
+    height: 34px;
 }
-
-/* @media only screen and (max-width: 1024px) {
-    .project-image .project-details h2 {
-        text-align: center;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: 300;
-        margin-top: 50px;
-        transition: 0.4s;
-        transition-property: transform;
-        opacity: 0;
-    }
-    
-    .project-image .project-details p {
-        margin: 20px 10px 0 10px;
-        font-size: 16px;
-        text-align: center;
-        opacity: 0;
-        transition: 0.6s;
-        transition-property: opacity, transform;
-    }
-
-    .project-more .project-read-more {
-        font-size: 16px;
-    }
-
-    img.devicon{
-        width: 26px;
-        height: 26px;
-    }
-} */
-/* 
-@media only screen and (max-width: 900px) {
-    .project-more{
-        display: none;
-    }
-    .project-image .project-details h2 {
-        word-wrap: break-word;
-    }
-
-    .project-image .project-details p {
-        word-wrap: break-word;
-    }
-
-} */
 
 /* Start Contact Form */
 #contact-form {
     background-color: var(--raisin-black);
-    margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-top: 8%;
+    margin-left: 20vw;
+    margin-right: 20vw;
     margin-bottom: 5%;
     z-index: 2;
     border-radius: 10px;
+    min-width: none;
 }
 
 /* End Contact Form */

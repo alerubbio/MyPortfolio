@@ -1,13 +1,12 @@
 var url = location.href.split("/"); //replace string with location.href
-var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
+var navLinks = document.getElementsByClassName("nav-link");
+
 //naturally you could use something other than the <nav> element
-var i=0;
 var currentPage = url[url.length - 1];
-console.log("bruh moment")
-for(i;i<navLinks.length;i++){
+for(let i=0;i < navLinks.length; i++){
   var lb = navLinks[i].href.split("/");
+  console.log(lb)
   if(lb[lb.length-1] == currentPage) {
-   navLinks[i].className = "active";
+   navLinks[i].className = "nav-link active";
     }
   }
-
