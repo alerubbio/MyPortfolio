@@ -8,9 +8,9 @@ html, body{
 /* Custom Color Palette */
 :root{
     --gradient-color:linear-gradient(90deg,
-     rgba(182,30,96,1) 0%,
+    rgb(226, 85, 146) 0%,
       rgb(255, 45, 136) 100%);
-    --maroon-x-11: rgb(221, 70, 136);
+    --maroon-x-11: rgb(226, 85, 146);
     --silver-chalice: #AFB1B4ff;
     --raisin-black: #252934ff;  
     --prussian-blue: #052A4Fff;
