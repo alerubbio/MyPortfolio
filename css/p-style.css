@@ -48,8 +48,6 @@ nav {
 
 .nav-link:hover{
     transform: translateY(-1px);
-    
-
 }
 
 #navbar-name {
@@ -60,7 +58,7 @@ nav {
     background: var(--gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: var(--maximum-blue-green);
 }
 
 .navbar-nav .nav-link {
@@ -98,11 +96,20 @@ nav {
     text-decoration: none;
     color: inherit;
     padding-right: .5%;
+    color: var(--maximum-blue-green);
+    text-decoration: none;
 }
 
 .inline-icons a .fa-github {
     text-decoration: none;
     color: inherit;
+    color: var(--maximum-blue-green);
+    text-decoration: none;
+}
+
+.inline-icons a :hover{
+    text-decoration: none;
+    color: var(--maroon-x-11)
 }
 
 #resume-btn {
@@ -113,6 +120,15 @@ nav {
     transition-duration: 0.4s;
     margin-right: 2%;
     margin-left: -2%;
+}
+
+#resume-btn a {
+    color: var(--maximum-blue-green);
+    text-decoration: none;
+}
+
+#resume-btn :hover{
+    color: var(--maroon-x-11);
 }
 
 i{
@@ -128,7 +144,7 @@ i:hover{
     color: var(--maroon-x-11);
 }
 
-a:link {
+/* a:link {
     color: var(--maximum-blue-green);
     text-decoration: none;
 }
@@ -136,7 +152,7 @@ a:link {
 a:hover {
     text-decoration: none;
     color: var(--maroon-x-11)
-}
+} */
 
 #site-banner {
     padding-top: 12%;
@@ -211,9 +227,14 @@ a:hover {
     height: 100%;
 }
 
+.project-details a {
+    text-decoration: none;
+}
+
 .project-image .project-details h2 {
+    color: aliceblue;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-transform: uppercase;
     font-weight: 300;
     margin-top: 50px;
@@ -224,6 +245,7 @@ a:hover {
 
 .project-image .project-details h2 span {
     font-weight: 900;
+    color: aliceblue;
 }
 
 .project-image:hover .project-details h2 {
@@ -233,7 +255,7 @@ a:hover {
 
 .project-image .project-details p {
     margin: 20px 20px 0 20px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     text-align: center;
     opacity: 0;
     transition: 0.6s;
@@ -267,7 +289,7 @@ a:hover {
 .project-more .project-read-more {
     color: #000;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -276,7 +298,6 @@ a:hover {
     font-weight: 900;
 }
 
-.icon-wrapper {}
 
 img.devicon {
     width: 34px;
