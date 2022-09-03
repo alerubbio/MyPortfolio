@@ -18,3 +18,15 @@
     src:url('/fonts/static/Raleway-Regular.ttf');
     font-style: normal;
 }
+
+@font-face{
+    font-family:"Sans-Pro" ;
+    src:url('/fonts/SansPro/SourceSansPro-Regular.otf');
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Sans-Pro-Light" ;
+    src:url('/fonts/SansPro/SourceSansPro-Light.otf');
+    font-style: normal;
+}

@@ -4,9 +4,10 @@
 /* css vars */
 @import url(/css/partials/_variables.css);
 
+/* Site-Wide */
 html,
 body {
-    font-family: "Raleway";
+    font-family: "Sans-Pro";
     color: aliceblue;
 }
 
@@ -41,7 +42,6 @@ nav {
 
 
 .nav-item .nav-link {
-    /* text-transform: uppercase; */
     padding: 1.5em;
     font-size: 1.4em;
 }
@@ -72,7 +72,7 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
-/* end nav */
+/* Site Background */
 
 #particles-js {
     background-color: var(--raisin-black);
@@ -85,7 +85,6 @@ nav {
 /* Start Home Page */
 #avatar-img {
     width: 20%;
-    /* you can use % */
     height: auto;
     padding-bottom: 1rem;
     margin-right: 4%;
@@ -140,19 +139,8 @@ i:hover{
 }
 
 #resume-btn:hover {
-    /* background: var(--maroon-x-11); */
     color: var(--maroon-x-11);
 }
-
-/* a:link {
-    color: var(--maximum-blue-green);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    color: var(--maroon-x-11)
-} */
 
 #site-banner {
     padding-top: 12%;
@@ -164,8 +152,6 @@ a:hover {
 .site-main #site-banner h1 {
     font-size: 3rem;
 }
-
-/* End Banner Page */
 
 /* Start Project Page */
 
@@ -214,7 +200,7 @@ a:hover {
 }
 
 .project-image:hover img.project-bg {
-    opacity: .05;
+    opacity: .03;
 }
 
 .project-image .project-details {
@@ -254,9 +240,10 @@ a:hover {
 }
 
 .project-image .project-details p {
+    font-family:"Sans-Pro-Light" ;
     margin: 20px 20px 0 20px;
     font-size: 1.15rem;
-    text-align: center;
+    text-align: left;
     opacity: 0;
     transition: 0.6s;
     transition-property: opacity, transform;
@@ -300,8 +287,35 @@ a:hover {
 
 
 img.devicon {
-    width: 34px;
-    height: 34px;
+    width: 38px;
+    height: 38px;
+}
+
+/* About Me */
+.about-me{
+    margin-top: 12%;
+}
+
+#about-me-header{
+    text-align: left;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    font-size: 3rem;
+}
+
+.about-me-details{
+    font-family:"Sans-Pro-Light" ;
+    text-align: left;
+}
+
+.about-me-details-text{
+    font-size: 2.1rem;
+    font-weight: 300;
+}
+
+.strong{
+    font-size: 2.15rem;
+    font-weight: 600;
 }
 
 /* Start Contact Form */
@@ -315,5 +329,3 @@ img.devicon {
     border-radius: 10px;
     min-width: none;
 }
-
-/* End Contact Form */
