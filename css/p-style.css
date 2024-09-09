@@ -325,10 +325,11 @@ img.devicon {
 #contact-form {
     background-color: var(--raisin-black);
     margin-top: 8%;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 5%;
     z-index: 2;
     border-radius: 10px;
     min-width: none;
+    max-width: 50%;
 }
